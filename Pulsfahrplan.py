@@ -2,15 +2,6 @@ import numpy as np
 import matplotlib.pyplot as plt 
 from matplotlib import rc
 
-
-#Locale settings
-import locale
-# Set to German locale to get comma decimal separater
-locale.setlocale(locale.LC_NUMERIC, "de_DE")
-plt.rcdefaults()
-# Tell matplotlib to use the locale we set above
-plt.rcParams['axes.formatter.use_locale'] = True
-
 """
 t_1, U_e_1, U_a = np.loadtxt(r"10_2_b_A.lvm", usecols = (0,3,4), unpack = True) ## Daten auslesen 
 t_2, U_e_2, U_b = np.loadtxt(r"10_2_b_B.lvm", usecols = (0,3,4), unpack = True) ## Daten auslesen 
